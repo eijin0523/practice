@@ -1,0 +1,3 @@
+makeblastdb -in uniprot_sprot.fasta -dbtype prot -out uniprot_sprot
+
+blastp -query HIF1_CAEEL.fasta -db uniprot_sprot -evalue 1 -num_threads 8 -out blastp-out2.txt
